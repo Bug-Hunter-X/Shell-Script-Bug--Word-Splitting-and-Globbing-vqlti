@@ -1,0 +1,3 @@
+# Shell Script Bug: Word Splitting and Globbing
+
+This repository demonstrates a common but subtle bug in shell scripts related to word splitting and globbing. The script attempts to process multiple files, but it fails if any filenames contain spaces.  The core issue is that the loop iterates over each word, rather than the entire filename when the variable is unquoted.  This is a frequent source of errors in shell scripting. The solution involves using an array and proper quoting to ensure filenames with spaces are handled correctly. 
